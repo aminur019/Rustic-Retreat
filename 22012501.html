@@ -1,0 +1,1060 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Rustic Cabin Retreat
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+		   .carousel {
+            display: flex;
+            overflow: hidden;
+            scroll-behavior: smooth;
+        }
+        .carousel-item {
+            min-width: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <header class="fixed w-full z-50">
+   <div class="relative">
+ <!--    <img alt="Scenic view of a rustic cabin in the woods during sunrise" class="absolute inset-0 w-full h-full object-cover" height="1080" src="https://storage.googleapis.com/a1aa/image/PuH5Zl4a2ho3CtfxLTq6cE8aqFiHcLJyfas5J79ofX6uvaPoA.jpg" width="1920"/>
+   -->  <div class="absolute inset-0 bg-black opacity-50">
+    </div>
+    <div class="relative z-10 container mx-auto px-4 py-6 flex justify-between items-center">
+     <div class="flex items-center">
+      <img alt="Rustic cabin logo with earthy colors and nature elements" class="mr-4" height="50" src="logo.png" width="100"/>
+      <nav class="hidden md:flex space-x-6 text-white">
+       <a class="hover:text-green-400" href="#">
+        Home
+       </a>
+       <a class="hover:text-green-400" href="#">
+        About
+       </a>
+       <a class="hover:text-green-400" href="#">
+        Gallery
+       </a>
+       <a class="hover:text-green-400" href="#">
+        Local Attractions
+       </a>
+       <a class="hover:text-green-400" href="#">
+        Contact
+       </a>
+      </nav>
+     </div>
+     <div class="flex items-center space-x-4">
+      <a class="hidden md:inline-block bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800" href="#">
+       Book Now
+      </a>
+      <div class="hidden md:flex space-x-4 text-white">
+       <a href="#">
+        <i class="fab fa-facebook-f hover:text-green-400">
+        </i>
+       </a>
+       <a href="#">
+        <i class="fab fa-instagram hover:text-green-400">
+        </i>
+       </a>
+       <a href="#">
+        <i class="fas fa-search hover:text-green-400">
+        </i>
+       </a>
+      </div>
+      <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
+       <i class="fas fa-bars">
+       </i>
+      </button>
+     </div>
+    </div>
+    <div class="md:hidden z-50 absolute w-full" id="mobile-menu" style="display: none;">
+     <nav class="bg-black bg-opacity-75 text-white px-4 py-6 space-y-4">
+      <a class="block hover:text-green-400" href="#">
+       Home
+      </a>
+      <a class="block hover:text-green-400" href="#">
+       About
+      </a>
+      <a class="block hover:text-green-400" href="#">
+       Gallery
+      </a>
+      <a class="block hover:text-green-400" href="#">
+       Local Attractions
+      </a>
+      <a class="block hover:text-green-400" href="#">
+       Contact
+      </a>
+      <a class="block bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800" href="#">
+       Book Now
+      </a>
+      <div class="flex space-x-4">
+       <a href="#">
+        <i class="fab fa-facebook-f hover:text-green-400">
+        </i>
+       </a>
+       <a href="#">
+        <i class="fab fa-instagram hover:text-green-400">
+        </i>
+       </a>
+       <a href="#">
+        <i class="fas fa-search hover:text-green-400">
+        </i>
+       </a>
+      </div>
+     </nav>
+    </div>
+   </div>
+  </header>
+  <section class="relative h-screen flex items-center justify-center">
+   <img alt="Cozy cabin with a roaring fireplace in a forest setting at sunset" class="absolute inset-0 w-full h-full object-cover" height="1080" src="https://storage.googleapis.com/a1aa/image/oBa0VfecBeAFpp1e4aBNZkf0bddYrc5ZQMYLZfilbtAye82DKA.jpg" width="1920"/>
+   <div class="absolute inset-0 bg-black opacity-50">
+   </div>
+   <div class="relative z-20 text-center text-white px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+     Your Rustic Retreat Awaits
+    </h1>
+    <p class="text-lg md:text-2xl mb-8">
+     Relax in Nature’s Comfort
+    </p>
+    <a class="bg-green-700 text-white px-6 py-3 rounded hover:bg-green-800" href="#">
+     Book Your Stay
+    </a>
+   </div>
+  </section>
+  <section class="container mx-auto px-4 py-12">
+   <div class="text-center mb-12 fade-in">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+     Property Overview
+    </h2>
+    <p class="text-lg md:text-xl">
+     Discover the rustic charm and modern comforts of our secluded cabin. Enjoy private spaces, modern amenities, and the beauty of nature all around you.
+    </p>
+   </div>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+    <div class="fade-in">
+     <h3 class="text-xl font-bold mb-2 text-center">
+      Living Room
+     </h3>
+     <img alt="Living room with cozy furniture and a fireplace" class="w-full h-64 object-cover hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/fH0LmC1keUtztEfMa7b0fW8jO2w2xIxogFRkqnKafSkkJs9gC.jpg" width="600"/>
+     <p class="mt-4 text-center">
+      The living room offers a cozy atmosphere with comfortable furniture and a warm fireplace, perfect for relaxing after a day of exploring the outdoors.
+     </p>
+    </div>
+    <div class="fade-in">
+     <h3 class="text-xl font-bold mb-2 text-center">
+      Bedroom
+     </h3>
+     <img alt="Bedroom with rustic decor and comfortable bedding" class="w-full h-64 object-cover hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/oTySKs13ehQhRKzm6JKCCosbsfAeQMcuGCueF2O3DywFF2egC.jpg" width="600"/>
+     <p class="mt-4 text-center">
+      The bedroom features rustic decor and comfortable bedding, ensuring a restful night's sleep surrounded by the tranquility of nature.
+     </p>
+    </div>
+    <div class="fade-in">
+     <h3 class="text-xl font-bold mb-2 text-center">
+      Kitchen
+     </h3>
+     <img alt="Modern kitchen with all necessary amenities" class="w-full h-64 object-cover hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/QRSfmeCxgIlf2JQGlQK8re5iVXCcECuXkobcwBH1qz61E2egC.jpg" width="600"/>
+     <p class="mt-4 text-center">
+      The modern kitchen is equipped with all the necessary amenities, making it easy to prepare delicious meals during your stay.
+     </p>
+    </div>
+    <div class="fade-in">
+     <h3 class="text-xl font-bold mb-2 text-center">
+      Outdoor Area
+     </h3>
+     <img alt="Outdoor area with seating and a fire pit" class="w-full h-64 object-cover hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/OubsjHnHpX4dKNeeYUg2HaeoO80iKcUoNpnkz3fuuHMDF2egC.jpg" width="600"/>
+     <p class="mt-4 text-center">
+      The outdoor area features comfortable seating and a fire pit, perfect for enjoying evenings under the stars with family and friends.
+     </p>
+    </div>
+    <div class="fade-in">
+     <h3 class="text-xl font-bold mb-2 text-center">
+      Scenic Views
+     </h3>
+     <img alt="Scenic view of the surrounding nature" class="w-full h-64 object-cover hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/CQQiREJmbe0sBK0Lo2wqk596fvfeRQvm3pkRkjcRcR15E2egC.jpg" width="600"/>
+     <p class="mt-4 text-center">
+      Enjoy breathtaking scenic views of the surrounding nature, providing a serene and peaceful backdrop for your stay.
+     </p>
+    </div>
+    <div class="fade-in">
+     <h3 class="text-xl font-bold mb-2 text-center">
+      Hot Tub
+     </h3>
+     <img alt="Private hot tub with a view of the forest" class="w-full h-64 object-cover hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/m25FpxYGhqYlBVljxyfxIMYshVmHpz88Ct7bE2UK6Ym792DKA.jpg" width="600"/>
+     <p class="mt-4 text-center">
+      Relax in the private hot tub with a stunning view of the forest, offering the perfect way to unwind and enjoy the natural surroundings.
+     </p>
+    </div>
+   </div>
+   <div class="text-center mb-12 fade-in">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+     Key Features
+    </h2>
+   </div>
+   <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300 fade-in">
+     <i class="fas fa-paw text-green-700 text-4xl mb-4">
+     </i>
+     <h3 class="text-xl font-bold mb-2">
+      Pet-Friendly
+     </h3>
+     <p>
+      Bring your furry friends along! Our cabin is pet-friendly, ensuring a comfortable stay for you and your pets.
+     </p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300 fade-in">
+     <i class="fas fa-wifi text-green-700 text-4xl mb-4">
+     </i>
+     <h3 class="text-xl font-bold mb-2">
+      Wi-Fi
+     </h3>
+     <p>
+      Stay connected with our high-speed Wi-Fi, available throughout the cabin for your convenience.
+     </p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300 fade-in">
+     <i class="fas fa-fire text-green-700 text-4xl mb-4">
+     </i>
+     <h3 class="text-xl font-bold mb-2">
+      Outdoor Fireplace
+     </h3>
+     <p>
+      Enjoy cozy evenings by the outdoor fireplace, perfect for roasting marshmallows and sharing stories.
+     </p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300 fade-in">
+     <i class="fas fa-car text-green-700 text-4xl mb-4">
+     </i>
+     <h3 class="text-xl font-bold mb-2">
+      Free Parking
+     </h3>
+     <p>
+      We offer free parking for our guests, ensuring a hassle-free experience from the moment you arrive.
+     </p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300 fade-in">
+     <i class="fas fa-hot-tub text-green-700 text-4xl mb-4">
+     </i>
+     <h3 class="text-xl font-bold mb-2">
+      Hot Tub
+     </h3>
+     <p>
+      Unwind in our luxurious hot tub, offering a perfect way to relax and enjoy the natural surroundings.
+     </p>
+    </div>
+   </div>
+  </section>
+  
+  
+  
+  
+  
+  <!----------------------------------------------------------------------------------------------------------------------------------------------->
+  
+  
+  
+  
+  
+  
+  <section class="py-12">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">
+     Local Attractions &amp; Experiences
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 fade-in">
+      <img alt="Scenic hiking trail surrounded by lush greenery" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/UTcNXBQjl6rKKZNeyp6Yj7HePaUJPpFbwfCsQ4l4tXT0acPoA.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2">
+        Scenic Hiking Trails
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Explore the beautiful hiking trails that offer breathtaking views and a chance to connect with nature.
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 fade-in">
+      <img alt="Wine glasses and a bottle of wine at a local winery" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/FRr5qqfeWrnbSULvZBNR060dfeteA7ISyjt4v1l5ruUpIx9gC.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2">
+        Local Wineries
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Visit nearby wineries to taste exquisite local wines and enjoy the serene vineyard landscapes.
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 fade-in">
+      <img alt="Delicious meal served at a local restaurant" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/kxWKqEVoCzryIBh19LCKIWnXYfJgox7raQWBmWXeKAPdNuHUA.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2">
+        Local Restaurants
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Savor the flavors of the region at local restaurants offering a variety of delicious dishes.
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 fade-in">
+      <img alt="Historical landmark with ancient architecture" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/zYGDfDoG3KynAKSfJHXTTIUBWCAK9IarTkdYcfCEw5zAbcPoA.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2">
+        Historical Landmarks
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Discover the rich history of the area by visiting nearby historical landmarks and museums.
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 fade-in">
+      <img alt="Beautiful lake with clear water and surrounding trees" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/VvHNkRGsmkI5OV1GF4lSNToa6396JzzZzcloLSavvoEVj7BF.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2">
+        Serene Lakes
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Enjoy a peaceful day by the lake, perfect for picnics, fishing, or simply relaxing by the water.
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 fade-in">
+      <img alt="Local market with various stalls and fresh produce" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/Y8cVIssaoR5tP9mQu9x2YvFu1650U1Eml1iVOFyPRzhQi7BF.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2">
+        Local Markets
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Visit local markets to experience the vibrant culture and purchase fresh produce and handmade goods.
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 fade-in">
+      <img alt="Kayaking on a calm river surrounded by nature" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/qI9PPvtAeCQrY6nQhszz1tw54tIOQyX6vqPCxiW13D2zG3DKA.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2">
+        Kayaking Adventures
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Enjoy a thrilling kayaking adventure on the nearby rivers and lakes, perfect for all skill levels.
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 fade-in">
+      <img alt="Beautiful beach with golden sand and clear blue water" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/BbDPqteWt7wrQSgXQDcM0NyyfKz6uBifbfSVzASS5bD0j4egC.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2">
+        Beautiful Beaches
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Relax on the golden sands of our beautiful beaches and enjoy the clear blue waters.
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 fade-in">
+      <img alt="Mountain biking trail with a scenic view of the mountains" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/aDv22orRtkI9Jd2rz3LUkcdtDg45DeJ2sPo9OqeThkbfRcPoA.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="text-xl font-semibold mb-2">
+        Mountain Biking
+       </h3>
+       <p class="text-gray-700 mb-4">
+        Experience the thrill of mountain biking on our scenic trails with breathtaking views.
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        Learn More
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="text-center mt-8">
+     <a class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600" href="#">
+      Explore Local Attractions
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Gallery Section -->
+  <section class="py-12 bg-gray-200">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">
+     Gallery
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="relative group fade-in">
+      <img alt="Cozy living room with a fireplace and comfortable seating" class="w-full h-48 object-cover rounded-lg shadow-lg group-hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/Pimug8yCw5KPER1magXE9LyGQzpG652lY4jtYFUNwjuZj7BF.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <p class="text-white text-lg">
+        Cozy nights by the fire
+       </p>
+      </div>
+     </div>
+     <div class="relative group fade-in">
+      <img alt="Spacious bedroom with a large bed and beautiful decor" class="w-full h-48 object-cover rounded-lg shadow-lg group-hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/f3IMh81Ybs1JCCfkVRCRXQmOl4wGqg0ecmtOgQDcQf8x14egC.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <p class="text-white text-lg">
+        Comfortable and spacious bedroom
+       </p>
+      </div>
+     </div>
+     <div class="relative group fade-in">
+      <img alt="Modern kitchen with all necessary appliances" class="w-full h-48 object-cover rounded-lg shadow-lg group-hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/vSz7NEUebvzaQiJkenGpLDyOw8cJYwDCVqS0T3P4vfdf24egC.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <p class="text-white text-lg">
+        Fully equipped modern kitchen
+       </p>
+      </div>
+     </div>
+     <div class="relative group fade-in">
+      <img alt="Outdoor space with a beautiful view of the surrounding nature" class="w-full h-48 object-cover rounded-lg shadow-lg group-hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/WBlArMqUikp1PttLkM77R3PTPs8rFBZDWoOwKtqsSGbYj7BF.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <p class="text-white text-lg">
+        Unmatched views from the porch
+       </p>
+      </div>
+     </div>
+     <div class="relative group fade-in">
+      <img alt="Dining area with a rustic wooden table and chairs" class="w-full h-48 object-cover rounded-lg shadow-lg group-hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/ka97OPfuDJTCNa0Giw82hgfUTnrewBef5rIY5fRkIHCvMi7BF.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <p class="text-white text-lg">
+        Rustic dining area
+       </p>
+      </div>
+     </div>
+     <div class="relative group fade-in">
+      <img alt="Outdoor fire pit area with seating" class="w-full h-48 object-cover rounded-lg shadow-lg group-hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/r8IVEfv5agyZfEFFtVvu6SPwdnf3aL9JTrf0pvT22LwVj4egC.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <p class="text-white text-lg">
+        Outdoor fire pit for cozy evenings
+       </p>
+      </div>
+     </div>
+     <div class="relative group fade-in">
+      <img alt="Luxurious bathroom with a large bathtub and modern fixtures" class="w-full h-48 object-cover rounded-lg shadow-lg group-hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/cOeU3Yz4xJVDdaXzVn6129g1feNX9rKIaLUorc1O3lvVbcPoA.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <p class="text-white text-lg">
+        Luxurious bathroom
+       </p>
+      </div>
+     </div>
+     <div class="relative group fade-in">
+      <img alt="Beautifully decorated hallway with rustic elements" class="w-full h-48 object-cover rounded-lg shadow-lg group-hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/gK8zBswSw6pQKBpIXmPcfX6D6iaxI6e2ioCSLTsvw1Z8IuHUA.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <p class="text-white text-lg">
+        Rustic hallway decor
+       </p>
+      </div>
+     </div>
+     <div class="relative group fade-in">
+      <img alt="Outdoor seating area with a view of the forest" class="w-full h-48 object-cover rounded-lg shadow-lg group-hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/eaSxa9hJYTQUe0kK12OAk4qCEUgXewtUovjdSa9x7Sjfk4egC.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <p class="text-white text-lg">
+        Outdoor seating with forest view
+       </p>
+      </div>
+     </div>
+     <div class="relative group fade-in">
+      <img alt="Cozy reading nook with a comfortable chair and bookshelf" class="w-full h-48 object-cover rounded-lg shadow-lg group-hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/VlLGAC9lMA5bLdfOaJMYCocgcSUxE47IAAC9FeBhkOotZuHUA.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <p class="text-white text-lg">
+        Cozy reading nook
+       </p>
+      </div>
+     </div>
+     <div class="relative group fade-in">
+      <img alt="Spacious deck with outdoor furniture and a view of the mountains" class="w-full h-48 object-cover rounded-lg shadow-lg group-hover:opacity-75 transition-opacity duration-300" height="400" src="https://storage.googleapis.com/a1aa/image/AnNKDQcyvfU8JqzebWx4j0xen3fK86qwuaNfuniRsAX3Mz9gC.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <p class="text-white text-lg">
+        Spacious deck with mountain view
+       </p>
+      </div>
+     </div>
+     <div class="relative group fade-in">
+      <img alt="Charming garden area with flowers and a small fountain" class="w-full h-48 object-cover rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/xvpfriXBy4xRGK4fzM8IJHnFslUj1bBWMOAG7YLLyPg3IuHUA.jpg" width="600"/>
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+       <p class="text-white text-lg">
+        Charming garden area
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="text-center mt-8 fade-in">
+     <a class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600" href="#">
+      See More Photos
+     </a>
+    </div>
+   </div>
+  </section>
+  
+  
+  
+  <!-------------------------------------------------------------------------------------------------------------------->
+  
+  
+  
+  <div class="max-w-4xl mx-auto py-12">
+   <div class="relative">
+    <div class="carousel" id="testimonial-carousel">
+     <div class="carousel-item p-6 bg-white rounded-lg shadow-md flex flex-col items-center text-center">
+      <div class="flex items-center mb-4">
+       <img alt="Portrait of guest John Doe smiling" class="w-16 h-16 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/5ePzFCr76AQdKiTauDPShf233GKmGfFxY863wxvD6rRjOeegC.jpg" width="100"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         John Doe
+        </h3>
+        <p class="text-sm text-gray-600">
+         New York, USA - Stayed: Jan 2023
+        </p>
+       </div>
+      </div>
+      <p class="text-gray-800 italic mb-4">
+       "This was the best vacation ever! The cabin was cozy and the views were breathtaking. We enjoyed the serene environment and the beautiful landscapes. The staff were very friendly and accommodating. Key points:
+       <ul class="list-disc list-inside">
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Cozy cabin with all amenities
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Breathtaking views
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Friendly and accommodating staff
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Serene environment
+        </li>
+       </ul>
+       "
+      </p>
+      <div class="flex items-center justify-center">
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+      </div>
+     </div>
+     <div class="carousel-item p-6 bg-white rounded-lg shadow-md flex flex-col items-center text-center">
+      <div class="flex items-center mb-4">
+       <img alt="Portrait of guest Jane Smith smiling" class="w-16 h-16 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/1AWT5BCNIArqPJW2UNsl6S5f7C21sq9p19kNFVtzh8vqj3DKA.jpg" width="100"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         Jane Smith
+        </h3>
+        <p class="text-sm text-gray-600">
+         London, UK - Stayed: Feb 2023
+        </p>
+       </div>
+      </div>
+      <p class="text-gray-800 italic mb-4">
+       "A truly magical experience. The cabin was perfect and the staff were incredibly friendly. We loved the peaceful surroundings and the beautiful decor of the cabin. Key points:
+       <ul class="list-disc list-inside">
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Perfect cabin with beautiful decor
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Incredibly friendly staff
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Peaceful surroundings
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Close to nature
+        </li>
+       </ul>
+       "
+      </p>
+      <div class="flex items-center justify-center">
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+      </div>
+     </div>
+     <div class="carousel-item p-6 bg-white rounded-lg shadow-md flex flex-col items-center text-center">
+      <div class="flex items-center mb-4">
+       <img alt="Portrait of guest Michael Brown smiling" class="w-16 h-16 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/LZ9JYBiMgCLRMJnO09g4EBy6SbyvR4dDPPacEwevhpeTHvHUA.jpg" width="100"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         Michael Brown
+        </h3>
+        <p class="text-sm text-gray-600">
+         Sydney, Australia - Stayed: Mar 2023
+        </p>
+       </div>
+      </div>
+      <p class="text-gray-800 italic mb-4">
+       "Absolutely loved it! The cabin was beautiful and the location was perfect for a relaxing getaway. The amenities were top-notch and the staff were very helpful. Key points:
+       <ul class="list-disc list-inside">
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Beautiful cabin
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Perfect location for relaxation
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Top-notch amenities
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Helpful staff
+        </li>
+       </ul>
+       "
+      </p>
+      <div class="flex items-center justify-center">
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+      </div>
+     </div>
+     <div class="carousel-item p-6 bg-white rounded-lg shadow-md flex flex-col items-center text-center">
+      <div class="flex items-center mb-4">
+       <img alt="Portrait of guest Emily Davis smiling" class="w-16 h-16 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/syEURJMkWXYQFdRfffVM3eJaCffMRECuEIwjtfVdUUvnsj3DKA.jpg" width="100"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         Emily Davis
+        </h3>
+        <p class="text-sm text-gray-600">
+         Toronto, Canada - Stayed: Apr 2023
+        </p>
+       </div>
+      </div>
+      <p class="text-gray-800 italic mb-4">
+       "The cabin was a dream come true. We had an amazing time and can't wait to come back! The location was perfect and the cabin was well-equipped. Key points:
+       <ul class="list-disc list-inside">
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Dream cabin
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Perfect location
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Well-equipped cabin
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Amazing time
+        </li>
+       </ul>
+       "
+      </p>
+      <div class="flex items-center justify-center">
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+      </div>
+     </div>
+     <div class="carousel-item p-6 bg-white rounded-lg shadow-md flex flex-col items-center text-center">
+      <div class="flex items-center mb-4">
+       <img alt="Portrait of guest David Wilson smiling" class="w-16 h-16 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/lGK76xfU4VXABC7hkMVKz1Fc9OYsWA4TfVE39BO84sPWHvHUA.jpg" width="100"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         David Wilson
+        </h3>
+        <p class="text-sm text-gray-600">
+         Berlin, Germany - Stayed: May 2023
+        </p>
+       </div>
+      </div>
+      <p class="text-gray-800 italic mb-4">
+       "An unforgettable experience. The cabin was stunning and the service was top-notch. We enjoyed every moment of our stay. Key points:
+       <ul class="list-disc list-inside">
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Stunning cabin
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Top-notch service
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Unforgettable experience
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Enjoyed every moment
+        </li>
+       </ul>
+       "
+      </p>
+      <div class="flex items-center justify-center">
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+      </div>
+     </div>
+     <div class="carousel-item p-6 bg-white rounded-lg shadow-md flex flex-col items-center text-center">
+      <div class="flex items-center mb-4">
+       <img alt="Portrait of guest Sarah Johnson smiling" class="w-16 h-16 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/OmR1b2GNbX7EOxKHdMZO83aYVbj1TSfyxCT4Pp5jQOgrj3DKA.jpg" width="100"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         Sarah Johnson
+        </h3>
+        <p class="text-sm text-gray-600">
+         Paris, France - Stayed: Jun 2023
+        </p>
+       </div>
+      </div>
+      <p class="text-gray-800 italic mb-4">
+       "The perfect getaway. The cabin was beautiful and the surroundings were serene. We felt completely relaxed and rejuvenated. Key points:
+       <ul class="list-disc list-inside">
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Beautiful cabin
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Serene surroundings
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Relaxing and rejuvenating
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Perfect getaway
+        </li>
+       </ul>
+       "
+      </p>
+      <div class="flex items-center justify-center">
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+      </div>
+     </div>
+     <div class="carousel-item p-6 bg-white rounded-lg shadow-md flex flex-col items-center text-center">
+      <div class="flex items-center mb-4">
+       <img alt="Portrait of guest Chris Lee smiling" class="w-16 h-16 rounded-full mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/e2hFBuP5A42UcyXVJfVRRAeBuaRowqheWGiGkiWGyaRId8egC.jpg" width="100"/>
+       <div>
+        <h3 class="text-lg font-semibold">
+         Chris Lee
+        </h3>
+        <p class="text-sm text-gray-600">
+         Seoul, South Korea - Stayed: Jul 2023
+        </p>
+       </div>
+      </div>
+      <p class="text-gray-800 italic mb-4">
+       "A wonderful experience. The cabin was cozy and the views were spectacular. We had a fantastic time exploring the area. Key points:
+       <ul class="list-disc list-inside">
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Cozy cabin
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Spectacular views
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Fantastic time exploring
+        </li>
+        <li class="flex items-center">
+         <i class="fas fa-check text-green-500 mr-2"></i> Wonderful experience
+        </li>
+       </ul>
+       "
+      </p>
+      <div class="flex items-center justify-center">
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+       <span class="text-yellow-500">
+        <i class="fas fa-star">
+        </i>
+       </span>
+      </div>
+     </div>
+    </div>
+    <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" onclick="prevSlide()">
+     <i class="fas fa-chevron-left">
+     </i>
+    </button>
+    <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" onclick="nextSlide()">
+     <i class="fas fa-chevron-right">
+     </i>
+    </button>
+   </div>
+   <div class="flex justify-center mt-4">
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full mx-1 cursor-pointer" onclick="currentSlide(1)">
+    </span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full mx-1 cursor-pointer" onclick="currentSlide(2)">
+    </span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full mx-1 cursor-pointer" onclick="currentSlide(3)">
+    </span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full mx-1 cursor-pointer" onclick="currentSlide(4)">
+    </span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full mx-1 cursor-pointer" onclick="currentSlide(5)">
+    </span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full mx-1 cursor-pointer" onclick="currentSlide(6)">
+    </span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full mx-1 cursor-pointer" onclick="currentSlide(7)">
+    </span>
+    <span class="dot w-3 h-3 bg-gray-400 rounded-full mx-1 cursor-pointer" onclick="currentSlide(8)">
+    </span>
+   </div>
+  </div>
+  
+  
+  
+  
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  
+  
+  
+  
+  
+  
+  
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between text-center md:text-left">
+                <!-- Logo and Social Media Integration -->
+                <div class="w-full md:w-1/4 mb-6 md:mb-0 flex flex-col items-center md:items-start">
+                    <img alt="Company logo with a modern and minimalist design" class="mb-4" height="50" src="logo.png" width="150"/>
+                    <h2 class="text-lg font-semibold mb-4">Follow Us</h2>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="w-full md:w-1/4 mb-6 md:mb-0 flex flex-col items-center md:items-start">
+                    <h2 class="text-lg font-semibold mb-4">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Local Attractions</a></li>
+                        <li><a href="#" class="hover:underline">Gallery</a></li>
+                        <li><a href="#" class="hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="w-full md:w-1/4 mb-6 md:mb-0 flex flex-col items-center md:items-start">
+                    <h2 class="text-lg font-semibold mb-4">Contact Info</h2>
+                    <p>Address: 123 Main Street, Anytown, USA</p>
+                    <p>Email: <a href="mailto:info@example.com" class="hover:underline">info@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890" class="hover:underline">+1 234 567 890</a></p>
+                </div>
+                <!-- Legal Links -->
+                <div class="w-full md:w-1/4 flex flex-col items-center md:items-start">
+                    <h2 class="text-lg font-semibold mb-4">Legal</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500">
+                &copy; 2023 Your Company. All rights reserved.
+            </div>
+        </div>
+    </footer>
+  
+  <script>
+   document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('mobile-menu');
+        if (menu.style.display === 'none' || menu.style.display === '') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    });
+
+    // Scroll animation
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    document.querySelectorAll('.fade-in').forEach(element => {
+        observer.observe(element);
+    });
+	
+	
+	
+	
+	
+	let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.transform = `translateX(${-slideIndex * 100}%)`;
+            });
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('bg-gray-800', index === slideIndex);
+                dot.classList.toggle('bg-gray-400', index !== slideIndex);
+            });
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlides();
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+            showSlides();
+        }
+
+        function currentSlide(index) {
+            slideIndex = index - 1;
+            showSlides();
+        }
+
+        setInterval(nextSlide, 5000);
+        showSlides();
+	
+	
+	
+	
+  </script>
+ </body>
+</html>
